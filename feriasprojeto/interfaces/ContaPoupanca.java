@@ -18,13 +18,13 @@ public class ContaPoupanca extends Conta {
 	@Override
 	public void depositar(double valor) {	
 		
-		this.setSaldo(+valor);
+		this.setSaldo(this.getSaldo() + valor);
 	}
 
 	@Override
 	public void sacar(double valor) {
 	
-		this.setSaldo(-valor);
+		this.setSaldo(this.getSaldo() - valor);
 	}
 
 }
